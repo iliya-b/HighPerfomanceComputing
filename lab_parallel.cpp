@@ -11,8 +11,8 @@
 #endif
 
 
-double lower_bound = -10000;
-double upper_bound = 10000;
+double lower_bound = -1000.0;
+double upper_bound = 1000.0;
 std::uniform_real_distribution<double> unif(lower_bound, upper_bound);
 std::default_random_engine re;
 
@@ -120,7 +120,7 @@ int main (int argc, char *argv[]) {
 
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
-            std::cout << A[i*n + j] << " ";
+            std::cout << std::setprecision(10) << A[i*n + j] << " ";
         }
         std::cout << std::endl;
     }

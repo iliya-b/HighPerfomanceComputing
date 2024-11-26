@@ -1,3 +1,6 @@
 a.out
 input.txt
 venv
+measure*
+cmp.sh
+lab_parallel_int.cpp
