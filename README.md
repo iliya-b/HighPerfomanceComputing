@@ -36,7 +36,7 @@ g++ (GCC) 10.2.0
 
 ### Программный код
 Доступен в репозитории GitHub
-[https://github.com/iliya-b/HighPerfomanceComputing/blob/f8ddacbce2bd4d90e386ee09e369ba36c506d385/lab_parallel.cpp](https://github.com/iliya-b/HighPerfomanceComputing/blob/f8ddacbce2bd4d90e386ee09e369ba36c506d385/lab_parallel.cpp)
+[https://github.com/iliya-b/HighPerfomanceComputing/blob/main/lab_parallel.cpp](https://github.com/iliya-b/HighPerfomanceComputing/blob/main/lab_parallel.cpp)
 
 ### Результаты измерений
 
