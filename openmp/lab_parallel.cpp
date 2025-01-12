@@ -86,15 +86,15 @@ int main (int argc, char *argv[]) {
     std::chrono::system_clock::time_point start_time = std::chrono::system_clock::now();
 
 
-        print_matrix(B, n);
-        std::cout << std::endl<< std::endl;
-        print_matrix(C, n);
-        std::cout << std::endl<< std::endl;
-        print_vector(x, n);
-        std::cout << std::endl<< std::endl;
-        print_vector(y, n);
-        std::cout << std::endl<< std::endl;
-        exit(-1);
+        // print_matrix(B, n);
+        // std::cout << std::endl<< std::endl;
+        // print_matrix(C, n);
+        // std::cout << std::endl<< std::endl;
+        // print_vector(x, n);
+        // std::cout << std::endl<< std::endl;
+        // print_vector(y, n);
+        // std::cout << std::endl<< std::endl;
+        // exit(-1);
     std::vector<double> CE(n); // single column of C*E
     #pragma omp parallel for
     for(int i = 0; i < n; i++){

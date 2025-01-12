@@ -59,7 +59,7 @@ int main (int argc, char *argv[]) {
     generate(&x, random_e);
     generate(&y, random_e);
     std::chrono::system_clock::time_point start_time = std::chrono::system_clock::now();
-    
+
 
     std::vector<double> CE(n); // single column of C*E
 #pragma omp parallel
@@ -147,11 +147,11 @@ int main (int argc, char *argv[]) {
 
     std::cerr << "elapsed " << elapsed_milliseconds.count() << "ms" << std::endl ;
 
-    // for(int i = 0; i < n; i++) {
-    //     for(int j = 0; j < n; j++) {
-    //         std::cout << std::setprecision(10) << A[i*n + j] << " ";
-    //     }
-    //     std::cout << std::endl;
-    // }
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            std::cout << std::setprecision(10) << A[i*n + j] << " ";
+        }
+        std::cout << std::endl;
+    }
     return 0;
 }
