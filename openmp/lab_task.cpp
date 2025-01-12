@@ -34,7 +34,7 @@ void generate(std::vector<double> * v,  double (*__gen)())
 
 int main (int argc, char *argv[]) {
 
-    re.seed(4);
+    re.seed(std::chrono::system_clock::now().time_since_epoch().count());
 
     int n;
 

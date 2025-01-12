@@ -58,13 +58,6 @@ void print_vector(std::vector<double> M, int n)
 
 
 int main(int argc, char** argv) {
-//   if (argc != 3) {
-//     fprintf(stderr, "Usage: compare_bcast num_elements num_trials\n");
-//     exit(1);
-//   }
-
-//   int num_elements = atoi(argv[1]);
-//   int num_trials = atoi(argv[2]);
 
   MPI_Init(&argc, &argv);
 
@@ -74,7 +67,7 @@ int main(int argc, char** argv) {
   MPI_Comm_size(MPI_COMM_WORLD, &comm_size);
 
 
-    re.seed(4);
+    re.seed(std::chrono::system_clock::now().time_since_epoch().count());
 
     int n = atoi(argv[1]);
 

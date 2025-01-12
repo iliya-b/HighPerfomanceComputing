@@ -89,8 +89,10 @@ y = [-973.1533202, -418.5129365, 77.65702866, ]
  ```
 
 ### Программный код
-Доступен в репозитории GitHub
-[https://github.com/iliya-b/HighPerfomanceComputing/blob/main/lab_parallel.cpp](https://github.com/iliya-b/HighPerfomanceComputing/blob/main/lab_parallel.cpp)
+Доступен в репозитории GitHub и в приложении.
+[https://github.com/iliya-b/HighPerfomanceComputing/blob/main/openmp/lab_parallel.cpp](https://github.com/iliya-b/HighPerfomanceComputing/blob/main/openmp/lab_parallel.cpp)
+
+[https://github.com/iliya-b/HighPerfomanceComputing/blob/main/openmp/lab_task.cpp](https://github.com/iliya-b/HighPerfomanceComputing/blob/main/openmp/lab_task.cpp)
 
 ### Результаты измерений
 
