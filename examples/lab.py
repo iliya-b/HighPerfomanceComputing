@@ -1,6 +1,6 @@
 import numpy as np
 
-n = 50
+n = 3
 with open('B.txt', 'r') as f:
     B = eval(f.read())
 with open('C.txt', 'r') as f:
