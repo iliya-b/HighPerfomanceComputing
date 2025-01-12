@@ -208,8 +208,11 @@ int main(int argc, char** argv) {
             std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now() -
                                                                   start_time);
 
-    if(world_rank == 0) std::cerr << "elapsed " << elapsed_milliseconds.count() << "ms" << std::endl ;
+    if(world_rank == 0){
+        std::cerr << "elapsed " << elapsed_milliseconds.count() << "ms" << std::endl ;
+        print_matrix(A, n);
 
+    }
     MPI_Finalize();
 }
 

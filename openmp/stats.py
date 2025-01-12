@@ -6,8 +6,14 @@ def get_speedup(x):
     orig = df[(df.threads == 1) & (df.m_size == x.m_size)] #.groupby('size')
     return orig.iloc[0].time / x.time
 
-df = pd.read_csv('./measure.csv', header=0)
+df = pd.read_csv('./m1.csv', header=0)
+df2 = pd.read_csv('./m2.csv', header=0)
+df3 = pd.read_csv('./m3.csv', header=0)
 
+df['time1'] = df.time
+df['time2'] = df2.time
+df['time3'] = df3.time
+df['time'] = (df.time1 + df.time2 + df.time3) / 3
 
 df['speedup'] = None
 

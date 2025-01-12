@@ -11,7 +11,7 @@ function run_matrix {
     echo 10000 | ./matrix > /dev/null
 }
 
-g++ -fopenmp lab_parallel.cpp -o matrix -DOMP=1
+g++ -fopenmp lab_${1:-parallel}.cpp -o matrix -DOMP=1
 
 export OMP_NUM_THREADS=1
 run_matrix
