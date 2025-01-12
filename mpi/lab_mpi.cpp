@@ -76,7 +76,7 @@ int main(int argc, char** argv) {
 
     re.seed(4);
 
-    int n = atoi(argv[1]); // 50
+    int n = atoi(argv[1]);
 
     // std::cin >> n;
 
@@ -103,7 +103,7 @@ int main(int argc, char** argv) {
     
 
     if(world_rank == 0){
-        generate(&B, random_e); // or get from input file
+        generate(&B, random_e);
         generate(&C, random_e);
         generate(&x, random_e);
         generate(&y, random_e);
